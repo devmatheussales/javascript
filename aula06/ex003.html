@@ -17,9 +17,13 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição</p>
     <script>
-        var num1 = Number.parseFloat(window.prompt('Digite um número: ')) //recebe um valor em string
-        var num2 = Number.parseFloat(window.prompt('Digite outro número: ')) //recebe um valor em string
-        var num3 = Number(window.prompt('Digite um terceiro número: ')) //recebe um valor em string
+        var num1 = Number.parseFloat(window.prompt('Digite um número: '))
+
+        var num2 = Number.parseFloat(window.prompt('Digite outro número: '))
+
+        var num3 = Number.parseFloat(window.prompt('Digite um terceiro número: '))// parse converte a variavel para o tipo adjacente que está no nome dela
+        // var num3 = Number.parseInt(window.prompt('Digite um terceiro número: '))
+
         var soma = num1+num2+num3
         window.alert(`A soma dos valores é ${soma}`)
        // window.alert('A soma dos valores é: ' + soma) // '+' é concatenação, mas se usado corretamente também pode ser usado para soma

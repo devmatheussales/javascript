@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais, Lógicos e Ternário</title>
+</head>
+<body>
+    <!-- 
+        RELACIONAIS
+        <   Menor que
+        >   Maior que
+        >=  Maior ou igual
+        <=  Menor ou igual
+        ==  Igual
+        !=  Diferente
+
+        Exemplos
+        preço >= 200.50 // Opreço é maior ou igual a 200.50?
+        idade <18       // A idade é menor que 18?
+        curso == 'Javascript' // o curso é Javascript ?
+        num1 != num2 // O primeiro número é diferente do segundo?
+        
+
+        Identidade
+        5 == 5 ->       true
+        5 == '5' ->     true (Em JavaScript o sinal de igualdade não testa o tipo)
+
+        5 === '5' ->    false Igualdade  Irrestrita (se são idênticos)
+        5 === 5 ->      true
+        
+        !== Diferente Irrestrito
+    -->
+
+    <!-- LÓGICOS 
+        Eles vem nessa Ordem de execução:
+        !   -> Negação
+        &&  -> Conjução (algo com 'e')
+        ||  -> Disjunção(algo como 'ou')
+
+
+
+        Negação 
+        !true -> false
+        !false -> true
+
+        Conjução     (só me sastisfaço quando as duas são verdadeiras)
+
+        true&&true      -> true
+        true&&false     -> false
+        false&&true     -> false
+        false&&false    -> true
+
+        Disjunção   (só me satisfaço quando um dos valores é verdadeiro)
+
+        true||true  ->true
+        true||false ->true
+        false||true ->true
+        false!!true ->false
+
+
+
+
+        Exemplos:
+        idade >= 15 && idade <=17 // A idade está entre 15 e 17?
+        estado == 'MG || estado =='SP' // O estado é MG ou SP ?
+        salário >1500 && sexo !'M' // O salário é acima de 1500 e não é homem?
+
+
+
+        Ternário 
+        ?:
+        teste?true:false
+        
+        exemplo
+        media >= 7.0?"Aprovado":"Reprovado"
+
+
+        var x = 8
+        var res = x % 2 == 0 ? 5 : 9
+        minha variavel res vai receber 5 ou 9, dpeendendo se x % for igual a 0
+
+        Outro exemplo
+        var idade = 19
+        var r = idade >= 18 ? "Maior" : "Menor"
+    -->
+    <script>
+        
+    </script>
+</body>
+</html>
