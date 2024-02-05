@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limite de Velocidade</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: gray;
+        }
+        input#itxtvel {
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            font-size: 2em;
+        }
+        input[value='Verificar']  {
+            display: inline-block;
+            background-color: blue;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 3px white;
+            text-align: center;
+            border-color: red;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+        }
+        p {
+            display: inline-block;
+            font-size: 1.4em;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do Veículo: <input type="number" name="txtvel" id="itxtvel"> Km/h</p>
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function calcular() {
+        var txtv = window.document.getElementById('input#itxtvel')
+        var res = window.document.querySelector('div#res')
+        var vel = Number(itxtvel.value)
+        res.innerHTML = `<p>Sua velocidade atual é de <strong> ${vel} Km/h</strong> </p>`
+        if (vel > 60) {
+            res.innerHTML += '<p>Você está <strong> MULTADO!</strong> por excesso de velocidade! </p>'
+        }
+        res.innerHTML += '<p> \n sDirija sempre com cinto de segurança!</p>'
+        }
+
+    </script>
+</body>
+</html>
