@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(111, 166, 238);
+    font: normal 15pt Arial;
+
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+}
+
+div {
+    display: flex;
+    min-width: 400px;
+}
+
+input[value=Contar] {
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    width: 100px;
+    height: 50px;
+}
+
+input[value=Contar]:hover {
+    cursor: pointer;
+    background-color: rgba(255, 166, 0, 0.795);
+    color: darkslateblue;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
