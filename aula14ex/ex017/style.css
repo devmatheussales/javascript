@@ -24,6 +24,21 @@ section {
 
 } */
 
+
+input[value='Gerar Tabuada'] {
+    background-color: orange;
+    color: blue;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    height: 25px;
+}
+input[value='Gerar Tabuada']:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: orangered;
+} 
+
 footer {
     color: white;
     text-align: center;
